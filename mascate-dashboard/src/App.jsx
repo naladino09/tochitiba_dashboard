@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from 'react-router-dom'
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Sidebar from './components/Sidebar'
 import Topbar from './components/Topbar'
@@ -14,7 +10,7 @@ import Configuracion from './pages/Configuracion'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div
         style={{
           display: 'flex',
@@ -52,7 +48,7 @@ function App() {
           </div>
         </div>
       </div>
-    </BrowserRouter>
+    </  HashRouter>
   )
 }
 
